@@ -4,4 +4,4 @@ Algorithms implement in JavaScript
 
 ## Algorithms
 
-1. [Odd occurences](odd-occurences)
+1. [Odd occurences](algorithms/odd-occurences)
