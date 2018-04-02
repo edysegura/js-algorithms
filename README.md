@@ -4,9 +4,10 @@ Algorithms implement in JavaScript
 
 ## Algorithms
 
-1. [Odd occurences](algorithms/odd-occurences)
+- [Fibonacci](fibonacci)
+- [Odd occurences](odd-occurences)
 
-----
+---
 In case you have doubt why I'm not using semicolon is because I got inspiration from these talks: 
 
 - [Semicolons cannot save you!](https://www.youtube.com/watch?v=Qlr-FGbhKaI)
