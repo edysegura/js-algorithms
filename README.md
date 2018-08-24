@@ -6,7 +6,7 @@ Algorithms implement in JavaScript
 
 - [Fibonacci](fibonacci)
 - [Odd occurences](odd-occurences)
-- [Shuffle](suffle)
+- [Shuffle](shuffle)
 
 ---
 In case you have doubt why I'm not using semicolon is because I got inspiration from these talks: 
