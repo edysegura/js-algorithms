@@ -1,6 +1,6 @@
 'use strict'
 
-function* fibonacciSequence(n) {
+function* fibonacciSequence() {
   for (let a = 0, b = 1;;) {
     yield a
     const c = a + b
@@ -9,9 +9,9 @@ function* fibonacciSequence(n) {
   }
 }
 
-function fibonacci(n) {
+function fibonacci(number) {
   for (const value of fibonacciSequence()) {
-    if (n-- === 0) return value
+    if (number-- === 0) return value
   }
 }
 
