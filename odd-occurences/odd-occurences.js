@@ -1,16 +1,16 @@
-const peerNumbers = [ 9,3,9,3,7 ]
+const peerNumbers = [ 9, 3, 9, 3, 7 ]
 
-function whoIsAlone (numbers) {
-    let lonelyNumbers = {}
-    const total = numbers.length
+function whoIsAlone(numbers) {
+  const lonelyNumbers = {}
+  const total = numbers.length
 
-    for (let i = 0; i < total; i++) {
-        lonelyNumbers[numbers[i]]
-            ? delete lonelyNumbers[numbers[i]]
-            : lonelyNumbers[numbers[i]] = numbers[i]
-    }
+  for (let i = 0; i < total; i++) {
+    lonelyNumbers[numbers[i]]
+      ? delete lonelyNumbers[numbers[i]]
+      : lonelyNumbers[numbers[i]] = numbers[i]
+  }
 
-    return Object.keys(lonelyNumbers)
+  return Object.keys(lonelyNumbers)
 }
 
-console.log(whoIsAlone(peerNumbers))
+console.log(whoIsAlone(peerNumbers)) // [ '7' ]
