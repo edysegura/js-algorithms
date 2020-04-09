@@ -9,11 +9,12 @@ const words = [
 ]
 
 function isPalindrome(word) {
-  const invertedWord = word.toLowerCase()
+  const wordLC = word.toLowerCase()
+  const invertedWord = wordLC
     .split('')
     .reverse()
     .join('')
-  return invertedWord === word.toLowerCase()
+  return invertedWord === wordLC
 }
 
 for (const word of words) {
