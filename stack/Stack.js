@@ -15,6 +15,6 @@ export class Stack {
   }
 
   isEmpty() {
-    return !!this.items.length
+    return this.items.length === 0
   }
 }
