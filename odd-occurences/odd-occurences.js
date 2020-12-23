@@ -9,7 +9,9 @@ function whoIsAlone(items) {
       : lonelyNumbers[item] = item
   }
 
-  return Object.keys(lonelyNumbers)
+  return Object
+    .keys(lonelyNumbers)
+    .map(value => +value)
 }
 
-console.log(whoIsAlone(peerNumbers)) // [ '7', '8' ]
+console.log(whoIsAlone(peerNumbers)) // [ 7, 8 ]
