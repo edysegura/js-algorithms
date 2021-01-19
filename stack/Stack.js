@@ -1,3 +1,6 @@
+/**
+ * Stack Data Structure in plain JavaScript
+ */
 export class Stack {
 
   #items = []
