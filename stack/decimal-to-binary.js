@@ -13,7 +13,7 @@ export function decimalToBinary(number) {
   }
 
   while (!remainderStack.isEmpty()) {
-    binaryString += remainderStack.pop()
+    binaryString += remainderStack.pop().toString()
   }
 
   return binaryString
