@@ -8,16 +8,19 @@ stack.push('Lidy')
 stack.push('Edy')
 
 console.log('is empty? ', stack.isEmpty())
-console.log(stack.peek())
-console.log(stack.size())
+console.log('Peek: ', stack.peek())
+console.log('Size: ', stack.size())
 
 stack.pop()
+console.log('stack.pop()')
 
-console.log(stack.peek())
-console.log(stack.size())
-console.log('clear')
+console.log('Peek: ', stack.peek())
+console.log('Size: ', stack.size())
+
 stack.clear()
-console.log(stack.size())
+console.log('stack.clear()')
+
+console.log('Size: ', stack.size())
 console.log('is empty? ', stack.isEmpty())
 
 console.log('Decimal / Binary')
