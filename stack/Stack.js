@@ -3,29 +3,38 @@
  */
 export class Stack {
 
-  #items = []
+  #items = {}
+  #index = 0
 
   push(item) {
-    this.#items.push(item)
+    this.#items[this.#index] = item
+    this.#index++
   }
 
   peek() {
-    return this.#items[this.#items.length - 1]
+    return this.#items[this.#index - 1]
   }
 
   pop() {
-    return this.#items.pop()
+    if (!this.isEmpty()) {
+      const index = this.#index - 1
+      const item = this.#items[index]
+      delete this.#items[index]
+      this.#index--
+      return item
+    }
   }
 
   isEmpty() {
-    return this.#items.length === 0
+    return this.#index === 0
   }
 
   size() {
-    return this.#items.length
+    return this.#index
   }
 
   clear() {
-    this.#items.length = 0
+    this.#items = {}
+    this.#index = 0
   }
 }
