@@ -37,7 +37,8 @@ export class Stack {
   }
 
   clear() {
-    this.#items = {}
-    this.#index = 0
+    while (!this.isEmpty()) {
+      this.pop()
+    }
   }
 }
