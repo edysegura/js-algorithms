@@ -12,17 +12,20 @@ export class Stack {
   }
 
   peek() {
+    if (this.isEmpty()) {
+      return null
+    }
     return this.#items[this.#index - 1]
   }
 
   pop() {
-    if (!this.isEmpty()) {
-      const index = this.#index - 1
-      const item = this.#items[index]
-      delete this.#items[index]
-      this.#index--
-      return item
+    if (this.isEmpty()) {
+      return null
     }
+    this.#index--
+    const item = this.#items[this.#index]
+    delete this.#items[this.#index]
+    return item
   }
 
   isEmpty() {
