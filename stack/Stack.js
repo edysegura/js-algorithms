@@ -41,4 +41,15 @@ export class Stack {
       this.pop()
     }
   }
+
+  toString() {
+    if (this.isEmpty()) {
+      return ''
+    }
+    let stackString = this.#items[0]
+    for (let index = 1; index < this.#index; index++) {
+      stackString += `,${this.#items[index]}`
+    }
+    return stackString
+  }
 }

@@ -8,6 +8,7 @@ stack.push('Lidy')
 stack.push('Edy')
 
 console.log('is empty? ', stack.isEmpty())
+console.log('toString():', stack.toString())
 console.log('Peek: ', stack.peek())
 console.log('Size: ', stack.size())
 
