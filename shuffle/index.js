@@ -1,23 +1,22 @@
 'use strict'
 
 function shuffle(list) {
-  const [ ...shuffledList ] = list
-  let counter = shuffledList.length
-  let temp, index
+  let counter = list.length
+  let temp, randomIndex
 
   while (counter > 0) {
-    index = Math.floor(Math.random() * counter)
+    randomIndex = Math.floor(Math.random() * counter)
     counter--
-    temp = shuffledList[ counter ]
-    shuffledList[ counter ] = shuffledList[ index ]
-    shuffledList[ index ] = temp
+    temp = list[ counter ]
+    list[ counter ] = list[ randomIndex ]
+    list[ randomIndex ] = temp
   }
 
-  return shuffledList
+  return list
 }
 
-const numberList = [1, 2, 3, 4, 5, 6]
-const nameList = ['Edy', 'Lidy', 'Davi']
+const numberList = [ 1, 2, 3, 4, 5 ]
+const nameList = [ 'Davi', 'Edy', 'Lidy', 'Sophia' ]
 
-console.log(numberList, shuffle(numberList))
-console.log(nameList, shuffle(nameList))
+console.log(numberList, shuffle([ ...numberList ]))
+console.log(nameList, shuffle([ ...nameList ]))
