@@ -1,12 +1,13 @@
-# Algorithms in JavaScript
+# Data Structures and Algorithms in JavaScript
 
-Algorithms implement in JavaScript
+Data Structures and Algorithms implemented in JavaScript/TypeScript
 
 ## Algorithms
 
 - [Fibonacci](fibonacci)
 - [Odd occurences](odd-occurences)
 - [Shuffle](shuffle)
+
 
 ---
 In case you have doubt why I'm not using semicolon is because I got inspiration from these talks: 
