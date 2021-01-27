@@ -4,9 +4,16 @@ Data Structures and Algorithms implemented in JavaScript/TypeScript
 
 ## Algorithms
 
+- [Array Reverse](array-reverse)
+- [Base Conversion](base-conversion)
+- [Candies](candies)
+- [Factorial](factorial)
 - [Fibonacci](fibonacci)
-- [Odd occurences](odd-occurences)
+- [Alone Number](number-alone)
+- [Odd Occurrences](odd-occurences)
+- [Palindrome](palindrome)
 - [Shuffle](shuffle)
+- [Stack](stack)
 
 
 ---
