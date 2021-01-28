@@ -10,7 +10,7 @@ Data Structures and Algorithms implemented in JavaScript/TypeScript
 - [Factorial](factorial)
 - [Fibonacci](fibonacci)
 - [Alone Number](number-alone)
-- [Odd Occurrences](odd-occurences)
+- [Odd Occurrences](odd-occurrences)
 - [Palindrome](palindrome)
 - [Shuffle](shuffle)
 - [Stack](stack)
