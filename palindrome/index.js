@@ -2,22 +2,23 @@
 
 const words = [
   'Civic',
+  'Davi',
+  'Edy',
   'Hannah',
   'Level',
-  'Edy',
-  'Reviver'
+  'Lidy',
+  'Reviver',
 ]
 
 function isPalindrome(word) {
-  const wordLC = word.toLowerCase()
-  const invertedWord = wordLC
+  const originalWord = word.toLowerCase()
+  const invertedWord = originalWord
     .split('')
     .reverse()
     .join('')
-  return invertedWord === wordLC
+  return invertedWord === originalWord
 }
 
 for (const word of words) {
-  !isPalindrome(word)
-    && console.log(`The word ${word} isn't a palindrome`)
+  console.log(`${word} is a palindrome? ${isPalindrome(word)}`)
 }
