@@ -1,5 +1,6 @@
 import { Stack } from './Stack.js'
 import { decimalToBinary } from './decimal-to-binary.js'
+import { baseConverter } from './base-converter.js'
 
 const stack = new Stack()
 
@@ -26,3 +27,6 @@ console.log('is empty? ', stack.isEmpty())
 
 console.log('Decimal / Binary')
 console.log('10 / ' + decimalToBinary(10))
+
+console.log('Decimal / base 16')
+console.log('10 / ' + baseConverter(10, 15))
