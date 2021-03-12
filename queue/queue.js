@@ -32,5 +32,10 @@ export class Queue {
   size() {
     return this.#count - this.#lowestCount
   }
-  
+
+  clear() {
+    this.#items = {}
+    this.#count = 0
+    this.#lowestCount = 0
+  }
 }
