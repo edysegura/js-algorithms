@@ -21,4 +21,11 @@ export class Queue {
   isEmpty() {
     return this.#count - this.#lowestCount === 0
   }
+
+  peek() {
+    if (this.isEmpty()) {
+      return null
+    }
+    return this.#items[this.#lowestCount]
+  }
 }
