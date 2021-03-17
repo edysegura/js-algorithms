@@ -45,7 +45,7 @@ export class Queue {
     }
     let queueString = `${this.#items[this.#lowestCount]}`
     for (let i = this.#lowestCount + 1; i < this.#count; i++) {
-      queueString += `,${this.#items[this.#lowestCount]}`
+      queueString += `,${this.#items[i]}`
     }
     return queueString
   }
