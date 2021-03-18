@@ -43,9 +43,9 @@ export class Queue {
     if (this.isEmpty()) {
       return ""
     }
-    let queueString = `${this.#items[this.#lowestCount]}`
+    let queueString = `${this.#lowestCount}:${this.#items[this.#lowestCount]}`
     for (let i = this.#lowestCount + 1; i < this.#count; i++) {
-      queueString += `,${this.#items[i]}`
+      queueString += `,${i}:${this.#items[i]}`
     }
     return queueString
   }
