@@ -18,3 +18,6 @@ queue.dequeue()
 queueStatus(queue)
 queue.enqueue('Sophia')
 queueStatus(queue)
+
+queue.clear()
+queueStatus(queue)
