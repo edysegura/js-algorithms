@@ -41,7 +41,7 @@ export class Queue {
 
   toString() {
     if (this.isEmpty()) {
-      return ""
+      return ''
     }
     let queueString = `${this.#lowestCount}:${this.#items[this.#lowestCount]}`
     for (let i = this.#lowestCount + 1; i < this.#count; i++) {
