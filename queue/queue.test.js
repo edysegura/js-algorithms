@@ -16,4 +16,12 @@ describe('Queue', () => {
     expect(queue.isEmpty()).toBe(false)
   })
 
+  it('should return size zero for an empty queue', () => {
+    // GIVEN
+    const queue = new Queue()
+
+    // THEN
+    expect(queue.size()).toBe(0)
+  })
+
 })
