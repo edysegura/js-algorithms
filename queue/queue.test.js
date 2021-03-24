@@ -24,4 +24,15 @@ describe('Queue', () => {
     expect(queue.size()).toBe(0)
   })
 
+  it('should return the correct size for a given queue', () => {
+    // GIVEN
+    const queue = new Queue()
+    queue.enqueue('Edy')
+    queue.enqueue('Lidy')
+    queue.enqueue('Davi')
+
+    // THEN
+    expect(queue.size()).toBe(3)
+  })
+
 })
