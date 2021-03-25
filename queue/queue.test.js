@@ -35,4 +35,15 @@ describe('Queue', () => {
     expect(queue.size()).toBe(3)
   })
 
+  it('should return the correct value for the first item in queue', () => {
+    // GIVEN
+    const queue = new Queue()
+    queue.enqueue('Edy')
+    queue.enqueue('Lidy')
+    queue.enqueue('Davi')
+
+    // THEN
+    expect(queue.peek()).toBe('Edy')
+  })
+
 })
