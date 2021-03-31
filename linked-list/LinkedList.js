@@ -26,4 +26,9 @@ export class LinkedList {
   size() {
     return this.#count
   }
+
+  isEmpty() {
+    return this.size() === 0
+  }
+
 }
