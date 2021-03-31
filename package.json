@@ -2,7 +2,8 @@
   "private": "true",
   "type": "module",
   "scripts": {
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "tdd": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --watch"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
