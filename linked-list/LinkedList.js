@@ -31,4 +31,20 @@ export class LinkedList {
     return this.size() === 0
   }
 
+  toString() {
+    if (this.#head === null) {
+      return ''
+    }
+
+    let linkedListString = `${this.#head.element}`
+    let current = this.#head.next
+
+    for (let i = 1; i < this.size() && current !== null; i++) {
+      linkedListString += `->${current.element}`
+      current = current.next
+    }
+
+    return linkedListString
+  }
+
 }

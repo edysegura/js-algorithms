@@ -27,4 +27,17 @@ describe('LinkedList', () => {
     expect(node.next).toBe(null)
   })
 
+  it('should return a string representing the LinkedList', () => {
+    // GIVEN
+    const linkedList = new LinkedList()
+    // THEN
+    expect(linkedList.toString()).toBe('')
+    // WHEN
+    linkedList.push('Edy')
+    linkedList.push('Lidy')
+    linkedList.push('Davi')
+    // THEN
+    expect(linkedList.toString()).toBe('Edy->Lidy->Davi')
+  })
+
 })
