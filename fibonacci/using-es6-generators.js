@@ -9,10 +9,10 @@ function* fibonacciSequence() {
   }
 }
 
-function fibonacci(number) {
+export function fibonacci(number) {
   for (const value of fibonacciSequence()) {
     if (number-- === 0) return value
   }
 }
 
-console.log('fibonacci(12): ', fibonacci(12))
+// console.log('fibonacci(12): ', fibonacci(12))
