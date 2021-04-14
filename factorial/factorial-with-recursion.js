@@ -3,6 +3,6 @@ export function factorial(number) {
   return number * factorial(number - 1)
 }
 
-console.log('factorial(5) =', factorial(5))
-console.log('factorial(1) =', factorial(1))
-console.log('factorial(0) =', factorial(0))
+// console.log('factorial(5) =', factorial(5))
+// console.log('factorial(1) =', factorial(1))
+// console.log('factorial(0) =', factorial(0))
