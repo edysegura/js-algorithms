@@ -9,7 +9,7 @@ function* fibonacciSequence() {
   }
 }
 
-export function fibonacci(number) {
+export function fibonacciGenerator(number) {
   for (const value of fibonacciSequence()) {
     if (number-- === 0) return value
   }
