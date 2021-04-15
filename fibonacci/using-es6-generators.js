@@ -16,13 +16,13 @@ export function fibonacciGenerator(number) {
 }
 
 export function fibonacci(number) {
-  let a = 0, b = 1, temp
+  let a = 0, b = 1, value
   for (let i = number; i >= 0; i--) {
-    temp = a
+    value = a
     a = a + b
-    b = temp
+    b = value
   }
-  return b
+  return value
 }
 
 // console.log('fibonacci(12): ', fibonacci(12))
