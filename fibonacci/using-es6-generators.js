@@ -15,4 +15,14 @@ export function fibonacciGenerator(number) {
   }
 }
 
+export function fibonacci(number) {
+  let a = 0, b = 1, temp
+  for (let i = number; i >= 0; i--) {
+    temp = a
+    a = a + b
+    b = temp
+  }
+  return b
+}
+
 // console.log('fibonacci(12): ', fibonacci(12))
