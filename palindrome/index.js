@@ -1,5 +1,7 @@
 'use strict'
 
+import { isPalindrome } from './palidrome.js'
+
 const words = [
   'Civic',
   'Davi',
@@ -9,15 +11,6 @@ const words = [
   'Lidy',
   'Reviver',
 ]
-
-function isPalindrome(word) {
-  const originalWord = word.toLowerCase()
-  const invertedWord = originalWord
-    .split('')
-    .reverse()
-    .join('')
-  return invertedWord === originalWord
-}
 
 for (const word of words) {
   console.log(`${word} is a palindrome? ${isPalindrome(word)}`)
