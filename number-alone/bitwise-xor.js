@@ -5,5 +5,5 @@ function findImpostor(pairs) {
   return pairs.reduce((accumulated, current) => accumulated ^ current)
 }
 
-console.log(findImpostor(pairs1))
-console.log(findImpostor(pairs2))
+console.log(findImpostor(pairs1)) // 1
+console.log(findImpostor(pairs2)) // 4
