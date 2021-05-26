@@ -1,4 +1,4 @@
-import { process } from './index.js'
+import { greatestNumberOfCandies } from './index.js'
 
 describe('Candies', () => {
   it('should calculate candies', () => {
@@ -7,6 +7,7 @@ describe('Candies', () => {
     const childrenCandies = [2, 3, 5, 1, 4]
 
     // THEN
-    expect(process(childrenCandies, extraCandies)).toEqual([ true, true, true, false, true ])
+    expect(greatestNumberOfCandies(childrenCandies, extraCandies))
+        .toEqual([ true, true, true, false, true ])
   })
 })
