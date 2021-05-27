@@ -12,7 +12,7 @@ function impostorReducer(accumulated, current) {
 
 function findImpostor(pairs) {
   const hash = pairs.reduce(impostorReducer, {})
-  return +Object.keys(hash)
+  return Object.values(hash)
 }
 
 console.log(findImpostor(pairs1)) // 1
