@@ -1,4 +1,4 @@
-import { isPalindrome } from './palidrome.js'
+import { isPalindrome } from './palindrome.js'
 
 describe('Palindrome', () => {
   it('should verify if a word is a palindrome', () => {

@@ -1,6 +1,6 @@
 'use strict'
 
-import { isPalindrome } from './palidrome.js'
+import { isPalindrome } from './palindrome.js'
 
 const words = [
   'Civic',
