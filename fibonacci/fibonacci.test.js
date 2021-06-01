@@ -9,7 +9,7 @@ describe('Fibonacci', () => {
     expect(fibonacciGenerator(4)).toBe(3)
   })
 
-  it('should calculate fibonacci using recursion', () => {
+  it('should calculate fibonacci using for loop', () => {
     expect(fibonacciLoop(0)).toBe(0)
     expect(fibonacciLoop(1)).toBe(1)
     expect(fibonacciLoop(2)).toBe(1)
