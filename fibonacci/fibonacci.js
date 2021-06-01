@@ -1,5 +1,3 @@
-'use strict'
-
 function* fibonacciSequence() {
   for (let a = 0, b = 1;;) {
     yield a
@@ -15,7 +13,7 @@ export function fibonacciGenerator(number) {
   }
 }
 
-export function fibonacci(number) {
+export function fibonacciLoop(number) {
   let a = 0, b = 1, value
   for (let i = number; i >= 0; i--) {
     value = a
