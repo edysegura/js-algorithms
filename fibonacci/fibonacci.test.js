@@ -1,7 +1,7 @@
 import { fibonacci, fibonacciGenerator } from './fibonacci.js'
 
 describe('Fibonacci', () => {
-  it('should calculate fibonacci from a given number', () => {
+  it('should calculate fibonacci using ES6 generator', () => {
     expect(fibonacciGenerator(0)).toBe(0)
     expect(fibonacciGenerator(1)).toBe(1)
     expect(fibonacciGenerator(2)).toBe(1)
@@ -9,7 +9,7 @@ describe('Fibonacci', () => {
     expect(fibonacciGenerator(4)).toBe(3)
   })
 
-  it('should calculate fibonacci from a given number', () => {
+  it('should calculate fibonacci using recursion', () => {
     expect(fibonacci(0)).toBe(0)
     expect(fibonacci(1)).toBe(1)
     expect(fibonacci(2)).toBe(1)
