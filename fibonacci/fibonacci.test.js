@@ -1,4 +1,4 @@
-import { fibonacci, fibonacciGenerator } from './using-es6-generators.js'
+import { fibonacci, fibonacciGenerator } from './fibonacci.js'
 
 describe('Fibonacci', () => {
   it('should calculate fibonacci from a given number', () => {
