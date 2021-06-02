@@ -1,4 +1,4 @@
-import { fibonacciLoop, fibonacciGenerator } from './fibonacci.js'
+import { fibonacciLoop, fibonacciGenerator, fibonacciRecursion } from './fibonacci.js'
 
 describe('Fibonacci', () => {
   it('should calculate fibonacci using ES6 generator', () => {
@@ -19,5 +19,17 @@ describe('Fibonacci', () => {
     expect(fibonacciLoop(6)).toBe(8)
     expect(fibonacciLoop(7)).toBe(13)
     expect(fibonacciLoop(8)).toBe(21)
+  })
+
+  it('should calculate fibonacci using recursion', () => {
+    expect(fibonacciRecursion(0)).toBe(0)
+    expect(fibonacciRecursion(1)).toBe(1)
+    expect(fibonacciRecursion(2)).toBe(1)
+    expect(fibonacciRecursion(3)).toBe(2)
+    expect(fibonacciRecursion(4)).toBe(3)
+    expect(fibonacciRecursion(5)).toBe(5)
+    expect(fibonacciRecursion(6)).toBe(8)
+    expect(fibonacciRecursion(7)).toBe(13)
+    expect(fibonacciRecursion(8)).toBe(21)
   })
 })
