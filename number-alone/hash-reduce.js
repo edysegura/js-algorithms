@@ -10,9 +10,9 @@ function impostorReducer(accumulated, current) {
   return accumulated
 }
 
-function findImpostor(pairs) {
+export function findImpostor(pairs) {
   const hash = pairs.reduce(impostorReducer, {})
-  return Object.values(hash)
+  return Object.values(hash).pop()
 }
 
 console.log(findImpostor(pairs1)) // 1
