@@ -1,5 +1,5 @@
-const pairs1 = [1, 2, 2, 3, 3]
-const pairs2 = [5, 5, 6, 6, 4]
+// const pairs1 = [1, 2, 2, 3, 3]
+// const pairs2 = [5, 5, 6, 6, 4]
 
 function impostorReducer(accumulated, current) {
   if (accumulated[current]) {
@@ -15,5 +15,5 @@ export function findImpostor(pairs) {
   return Object.values(hash).pop()
 }
 
-console.log(findImpostor(pairs1)) // 1
-console.log(findImpostor(pairs2)) // 4
+// console.log(findImpostor(pairs1)) // 1
+// console.log(findImpostor(pairs2)) // 4
